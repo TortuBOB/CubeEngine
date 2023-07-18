@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<scene>
+    <entity name="CameraEntity">
+        <transform>
+            <position x="0" y="30" z="40"></position>
+            <rotation x="-45" y="0" z="0"></rotation>
+            <scale x="1" y="1" z="1"></scale>
+        </transform>
+        <camera fov="60" near="1" far="70">
+        </camera>
+    </entity>
+    <entity name = "LightEntity">
+        <transform>
+            <position x="10" y="10" z ="10"></position>
+            <rotation x="0" y="0" z="0"></rotation>
+            <scale x="1" y="1" z="1"></scale>
+        </transform>
+        <light></light>
+    </entity>
+    <entity name="Floor">
+        <transform>
+            <position x="0" y="-6" z ="0"></position>
+            <rotation x="0" y="0" z="0"></rotation>
+            <scale x="20" y="0.3" z="20"></scale>
+        </transform>
+        <renderable>
+            <color r="0.4" g="0.65" b="0.9"></color> 
+        </renderable>
+        <physics mass="0"></physics>
+    </entity>
+    <entity name="RightWall">
+        <transform>
+            <position x="20" y="-3" z ="0"></position>
+            <rotation x="0" y="0" z="0"></rotation>
+            <scale x="0.5" y="3.3" z="20"></scale>
+        </transform>
+        <renderable>
+            <color r="0.1" g="0.4" b="0.9"></color> 
+        </renderable>
+        <physics mass="0" tag="Wall"></physics>
+    </entity>
+    <entity name="LeftWall">
+        <transform>
+            <position x="-20" y="-3" z ="0"></position>
+            <rotation x="0" y="0" z="0"></rotation>
+            <scale x="0.5" y="3.3" z="20"></scale>
+        </transform>
+        <renderable>
+            <color r="0.1" g="0.4" b="0.9"></color> 
+        </renderable>
+        <physics mass="0" tag="Wall"></physics>
+    </entity>
+    <entity name="UpWall">
+        <transform>
+            <position x="0" y="-3" z ="-20"></position>
+            <rotation x="0" y="0" z="0"></rotation>
+            <scale x="20" y="3.3" z="0.5"></scale>
+        </transform>
+        <renderable>
+            <color r="0.1" g="0.4" b="0.9"></color> 
+        </renderable>
+        <physics mass="0" tag="Wall"></physics>
+    </entity>
+    <entity name="DownWall">
+        <transform>
+            <position x="0" y="-3" z ="20"></position>
+            <rotation x="0" y="0" z="0"></rotation>
+            <scale x="20" y="3.3" z="0.5"></scale>
+        </transform>
+        <renderable>
+            <color r="0.1" g="0.4" b="0.9"></color> 
+        </renderable>
+        <physics mass="0" tag="Wall"></physics>
+    </entity>
+    <entity name="CubePlayer">
+        <transform>
+            <position x="0" y="3" z ="0"></position>
+            <rotation x="0" y="0" z="0"></rotation>
+            <scale x="1" y="1" z="1"></scale>
+        </transform>
+        <renderable>
+            <color r="1" g="0.7" b="0"></color> 
+        </renderable>
+        <physics mass="1"></physics>
+        <player speed="0.5"></player>
+    </entity>
+    <entity name="EnemyCubeOne">
+        <transform>
+            <position x="15" y="3" z ="15"></position>
+            <rotation x="0" y="0" z="0"></rotation>
+            <scale x="1" y="1" z="1"></scale>
+        </transform>
+        <renderable>
+            <color r="0.4" g="1.0" b="0.2"></color> 
+        </renderable>
+        <physics mass="1"></physics>
+    </entity>
+    <entity name="EnemyCubeTwo">
+        <transform>
+            <position x="-15" y="3" z ="15"></position>
+            <rotation x="0" y="0" z="0"></rotation>
+            <scale x="1" y="1" z="1"></scale>
+        </transform>
+        <renderable>
+            <color r="0.4" g="1.0" b="0.2"></color> 
+        </renderable>
+        <physics mass="1"></physics>
+    </entity>
+    <entity name="EnemyCubeThree">
+        <transform>
+            <position x="15" y="3" z ="-15"></position>
+            <rotation x="0" y="0" z="0"></rotation>
+            <scale x="1" y="1" z="1"></scale>
+        </transform>
+        <renderable>
+            <color r="0.4" g="1.0" b="0.2"></color> 
+        </renderable>
+        <physics mass="1"></physics>
+    </entity>
+    <entity name="EnemyCubeFour">
+        <transform>
+            <position x="-15" y="3" z ="-15"></position>
+            <rotation x="0" y="0" z="0"></rotation>
+            <scale x="1" y="1" z="1"></scale>
+        </transform>
+        <renderable>
+            <color r="0.4" g="1.0" b="0.2"></color> 
+        </renderable>
+        <physics mass="1"></physics>
+    </entity>
+</scene> 
